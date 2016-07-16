@@ -15,7 +15,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        let test = "I AM A LOUD STRING!"
+        print(test.whisper())
+        
+        let translateMe = "Please turn me into a pig"
+        print(translateMe.pigLatin)
+        
+        let findWordScore = "Ice cream!!" // Four vowels, four consonants, should return 12.
+        print(findWordScore.points)
+        
+        let nextLevel = "Unicorn"
+        print(nextLevel.unicornLevel)
+        
+        print(6.squared)
+        print(6.halved)
+        print(6.isDivisibleBy(3))
+        print(6.isDivisibleBy(4))
+        
         return true
     }
 
